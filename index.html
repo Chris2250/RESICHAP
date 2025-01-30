@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Résidences</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="CSS/header.css">
+   
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <h1>RESICHAP 24/7</h1>
+            <ul>
+                
+                <li><a href="index.html">Accueil</a>
+                <li><a href="#search"> Rechercher</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/dashboard.html">Tableau de Bord</a></li>
+                <li><a href="pages/login.html">Se connecter</a></li>
+                <li><a href="pages/register.html">Créez un compte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+      <!-- Section Accueil -->
+<section id="home">
+    <h2>Bienvenue sur RESICHAP 24/7</h2>
+    <p>Trouvez et réservez des résidences en toute simplicité, disponibles à tout moment !</p>
+    <div class="tabs">
+        <button class="tab" onclick="filterByCategory('ville')">Villes</button>
+        <button class="tab" onclick="filterByCategory('emplacement')">Emplacements</button>
+        <button class="tab" onclick="filterByCategory('prix')">Prix</button>
+    </div>
+</section>
+
+        <!-- Section Résidences en vedette -->
+        
+        <section id="featured">
+            <h2>Résidences en vedette</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/residence1.jpg" alt="Résidence Moderne">
+                    <h3>Résidence Moderne</h3>
+                    <p>3 chambres, 2 salles de bain, prix du centre-ville.</p>
+                    <p class="price">À partir de 100.000 XOF/jour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence2.jpg" alt="Appartement Luxueux">
+                    <h3>Appartement Luxueux</h3>
+                    <p>Vue panoramique, piscine privée, proche des plages.</p>
+                    <p class="price">À partir de 80.000/jour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence3.jpg" alt="Chalet Montagne">
+                    <h3>MARCORY ZONE 4</h3>
+                    <p>Chaleureux et confortable, parfait pour les vacances.</p>
+                    <p class="price">À partir de 55.000 XOF/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence4.jpg" alt="Appartement en Ville">
+                    <h3>Appartement en Ville</h3>
+                    <p>Idéalement situé pour les voyageurs d'affaires et de loisirs.</p>
+                    <p class="price">À partir de 150.000 XOF/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence5.jpg" alt="Appartement en Ville">
+                    <h3>Appartement en Ville</h3>
+                    <p>Idéalement situé pour les voyageurs d'affaires et de loisirs.</p>
+                    <p class="price">À partir de 5000/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence6.jpg" alt="Appartement en Ville">
+                    <h3>Appartement en Ville</h3>
+                    <p>Idéalement situé pour les voyageurs d'affaires et de loisirs.</p>
+                    <p class="price">À partir de 180€/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence7.jpg" alt="Appartement en Ville">
+                    <h3>Appartement en Ville</h3>
+                    <p>Idéalement situé pour les voyageurs d'affaires et de loisirs.</p>
+                    <p class="price">À partir de 100.000/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>
+                <div class="card">
+                    <img src="images/residence8.jpg" alt="Appartement en Ville">
+                    <h3>Appartement en Ville</h3>
+                    <p>Idéalement situé pour les voyageurs d'affaires et de loisirs.</p>
+                    <p class="price">À partir de 100.000/sejour</p>
+                    <button>Réserver maintenant</button>
+                </div>  
+            </div>
+        </section>
+        
+<!-- Section Contact -->
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute question ou demande, n'hésitez pas à nous joindre :</p>
+    <div class="contact-info">
+        <p><strong>Email :</strong> <a href="mailto:topnumerica@gmail.com">topnumerica@gmail.com</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+2250759184489">+225 0759184489</a></p>
+    </div>
+</section>
+
+
+        <!-- Section Créez un compte -->
+        
+        
+    </main>
+<!-- Bouton flottant -->
+<a href="register.html" class="floating-button">Créer un compte maintenant</a>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Résidences 24/7. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Client</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <h1>Tableau de Bord - Client</h1>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/help.html">Assistance</a></li>
+                <li><a href="../pages/login.html">Se déconnecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section id="dashboard">
+            <h2>Bienvenue, [Nom du Client]</h2>
+            <p>Gérez vos résidences et vos réservations facilement depuis votre tableau de bord.</p>
+
+            <div class="dashboard-options">
+                <div class="option">
+                    <h3>Mes Résidences</h3>
+                    <p>Ajoutez, modifiez ou supprimez vos résidences meublées.</p>
+                    <button onclick="location.href='add_residence.html'">Gérer mes résidences</button>
+                </div>
+                <div class="option">
+                    <h3>Mes Réservations</h3>
+                    <p>Consultez l'état de vos réservations en temps réel.</p>
+                    <button onclick="location.href='reservations.html'">Voir mes réservations</button>
+                </div>
+                <div class="option">
+                    <h3>Paramètres</h3>
+                    <p>Mettez à jour vos informations personnelles et vos préférences.</p>
+                    <button onclick="location.href='settings.html'">Accéder aux paramètres</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Résidences 24/7. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004d99; /* Couleur de fond bleu foncé */
+    color: #fff; /* Texte blanc pour contraster avec le fond */
+    margin-top: 40px; /* Espacement supérieur pour séparer le contenu */
+    border-radius: 15px; /* Bordures arrondies pour un effet plus doux */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile pour ajouter de la profondeur */
+}
+
+/* Paragraphe dans le pied de page */
+footer p {
+    margin: 0;
+    font-size: 16px; /* Taille de texte légèrement réduite pour un aspect plus équilibré */
+}
+
+/* Liens dans le pied de page */
+footer a {
+    color: #ffd700; /* Couleur dorée pour attirer l'attention sur les liens */
+    text-decoration: none; /* Retire le soulignement par défaut */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition fluide pour la couleur */
+}
+
+/* Effet au survol des liens */
+footer a:hover {
+    color: #ffcc00; /* Jaune plus clair au survol */
+    text-decoration: underline; /* Souligné au survol pour un effet interactif */
+}
+/* Section principale */
+#home {
+    background-color: #f0f8ff; /* Fond bleu clair */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre subtile pour un effet élégant */
+    margin: 20px auto;
+    max-width: 800px; /* Limite la largeur pour un meilleur alignement */
+}
+
+#home h2 {
+    font-size: 32px;
+    color: #0066cc; /* Couleur bleue pour le titre */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Section principale */
+#home {
+    background-color: #f0f8ff; /* Fond bleu clair */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    margin: 20px auto;
+    width: 90%; /* Largeur adaptée à celle de l'en-tête */
+    max-width: 1200px; /* Limite la largeur maximale */
+}
+
+/* Titre de la section */
+#home h2 {
+    font-size: 32px;
+    color: #0066cc; /* Couleur bleue pour le titre */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraphe sous le titre */
+#home p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Formulaire de recherche */
+#home form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#home input[type="text"] {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 50%; /* Largeur du champ de recherche */
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+#home input[type="text"]:focus {
+    border-color: #0066cc; /* Couleur de la bordure au focus */
+}
+
+#home button {
+    padding: 12px 20px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #004d99; /* Teinte plus foncée au survol */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    #home form {
+        flex-direction: column; /* Disposition verticale sur petits écrans */
+    }
+
+    #home input[type="text"] {
+        width: 80%; /* Champ de recherche plus large sur petits écrans */
+    }
+
+    #home button {
+        width: 80%; /* Bouton plus large sur petits écrans */
+    }
+}
+/* Section des résidences en vedette */
+#featured {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9; /* Couleur de fond légère */
+    border-radius: 15px; /* Bordures arrondies */
+    margin: 20px auto;
+    max-width: 98%; /* Même largeur que l'en-tête */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre élégante */
+}
+
+#featured h2 {
+    font-size: 36px;
+    color: #004d99; /* Bleu professionnel */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Grille des cartes */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Style des cartes */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden; /* Cache les bords dépassants */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Ombre subtile */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre renforcée au survol */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Assure que l'image remplit l'espace */
+}
+
+/* Titre de la résidence */
+.card h3 {
+    font-size: 20px;
+    margin: 15px 20px 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Description */
+.card p {
+    font-size: 16px;
+    margin: 0 20px 15px;
+    color: #555;
+}
+
+.card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004d99;
+}
+
+/* Bouton de réservation */
+.card button {
+    display: block;
+    margin: 0 20px 20px;
+    padding: 12px;
+    background: #004d99;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: #ffcc00; /* Couleur dorée */
+    color: #004d99;
+}
+/* Section Contact */
+#contact {
+    max-width: 1200px; /* Augmentation de la largeur */
+    margin: 1.5rem auto; /* Réduction de l'espacement vertical */
+    padding: 1.5rem 2rem; /* Réduction de la hauteur interne (padding) */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 1.8rem; /* Réduction de la taille de l'en-tête */
+    margin-bottom: 0.8rem; /* Réduction de l'espacement sous le titre */
+    color: #004d99;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin: 0.4rem 0; /* Réduction des marges entre les paragraphes */
+    color: #333;
+}
+
+.contact-info p {
+    margin: 0.4rem 0; /* Réduction des marges dans les informations de contact */
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #0073e6;
+}
+/* Bouton flottant */
+.floating-button {
+    position: fixed;
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px; /* Distance du côté droit de la page */
+    background-color: #2655d6; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    padding: 12px 20px; /* Espacement interne */
+    border-radius: 50px; /* Bordures arrondies */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: all 0.3s ease-in-out; /* Transition pour l'animation */
+    z-index: 1000; /* Au-dessus des autres éléments */
+}
+
+/* Animation au survol */
+.floating-button:hover {
+    background-color: #ff4a3d; /* Couleur de fond au survol */
+    transform: scale(1.1); /* Agrandir légèrement */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Accentuer l'ombre */
+}
