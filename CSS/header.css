@@ -13,7 +13,7 @@ header {
 
 /* Titre */
 h1 {
-    font-size: 50px; /* Titre plus grand */
+    font-size: 30px; /* Titre plus grand */
     margin: 0;
     font-weight: bold;
     margin-right: 300px; /* Ajouter de l'espace entre le titre et les onglets */

@@ -198,18 +198,35 @@ footer a:hover {
 }
 
 /* Bouton de réservation */
+/* Bouton de réservation */
 .card button {
     display: block;
     margin: 0 20px 20px;
-    padding: 12px;
-    background: #004d99;
+    padding: 12px 20px;
+    background: #007bff; /* Bleu plus éclatant */
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Effet au survol */
+.card button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au clic */
+.card button:active {
+    transform: scale(0.95);
+    background: #004080;
+}
+
 
 .card button:hover {
     background: #ffcc00; /* Couleur dorée */
@@ -278,3 +295,45 @@ footer a:hover {
     transform: scale(1.1); /* Agrandir légèrement */
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Accentuer l'ombre */
 }
+/* Style général des selects */
+.search-container select {
+    width: 100%;
+    max-width: 250px; /* Taille ajustable */
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol */
+.search-container select:hover {
+    background-color: #e3f2fd; /* Bleu clair */
+    border-color: #0056b3;
+}
+
+/* Effet au focus */
+.search-container select:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+/* Conteneur du logo et du titre */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre le logo et le texte */
+}
+
+/* Style du logo */
+.logo {
+    width: 80px; /* Ajustez la taille du logo selon vos besoins */
+    height: 80px; /* Assurez-vous que la hauteur et la largeur soient égales pour une forme ronde */
+    border-radius: 100%; /* Rend le logo rond */
+    object-fit: cover; /* Permet au logo de conserver ses proportions sans déformer l'image */
+}
+

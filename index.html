@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="CSS/header.css">
    
-</head>
+ </head>
 <body>
     <!-- En-tête -->
     <header>
         <nav>
+            <div class="logo-container">
+                <img src="images/Logo.jpg" alt="Logo Resichap" class="logo">
             <h1>RESICHAP 24/7</h1>
+            </div>
+
             <ul>
                 
                 <li><a href="index.html">Accueil</a>
@@ -28,16 +32,39 @@
     <!-- Contenu principal -->
     <main>
       <!-- Section Accueil -->
-<section id="home">
-    <h2>Bienvenue sur RESICHAP 24/7</h2>
-    <p>Trouvez et réservez des résidences en toute simplicité, disponibles à tout moment !</p>
-    <div class="tabs">
-        <button class="tab" onclick="filterByCategory('ville')">Villes</button>
-        <button class="tab" onclick="filterByCategory('emplacement')">Emplacements</button>
-        <button class="tab" onclick="filterByCategory('prix')">Prix</button>
-    </div>
-</section>
-
+      <section id="home">
+        <h2>Bienvenue sur RESICHAP 24/7</h2>
+        <p>Trouvez et réservez des résidences en toute simplicité, disponibles à tout moment !</p>
+        <div class="search-container">
+            <select>
+                <option selected disabled>Fourchette de prix</option>
+                <option>-50 000 F CFA</option>
+                <option>50 000 - 100 000 F CFA</option>
+                <option>100 000 - 200 000 F CFA</option>
+                <option>+200 000 F CFA</option>
+            </select>
+            
+            <select>
+                <option selected disabled>Villes en Côte d'Ivoire</option>
+                <option>Abidjan</option>
+                <option>Bouake</option>
+                <option>Korpgho</option>
+                <option>San Pedro</option>
+            </select>
+            
+            <select>
+                <option selected disabled>Nombre de pièces</option>
+                <option>Studio</option>
+                <option>Villa basse</option>
+                <option>Chambre - Salon</option>
+                <option>Deux chambres - Salon</option>
+                <option>Duplex</option>
+                
+            </select>
+            
+            <button>Rechercher</button>
+        </div>
+    </section>
         <!-- Section Résidences en vedette -->
         
         <section id="featured">
