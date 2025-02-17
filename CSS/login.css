@@ -69,3 +69,12 @@
 #login p a:hover {
     color: #0057b7;
 }
+ /* Pied de page */
+ footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
