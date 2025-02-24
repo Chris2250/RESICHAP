@@ -4,65 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation de Résidences</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="CSS/header.css">
-   
- </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style/style.css">  -->
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <!-- En-tête -->
+
     <header>
         <nav>
+            <img src="/images/LOGO RESICHAP Blanc.png" alt="" style="height: 4rem">
+            
             <ul>
-                
-                <li><a href="index.html">Accueil</a>
-                <li><a href="#search"> Rechercher</a></li>
+              <li><a href="index.html">Accueil</a></li> 
                 <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="pages/dashboard.html">Tableau de Bord</a></li>
                 <li><a href="pages/login.html">Se connecter</a></li>
                 <li><a href="pages/register.html">Créez un compte</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenu principal -->
     <main>
-      <!-- Section Accueil -->
-      <section id="home">
-        <h2>Bienvenue sur RESICHAP 24/7</h2>
-        <p>Trouvez et réservez des résidences en toute simplicité, disponibles à tout moment !</p>
-        <div class="search-container">
-            <select>
-                <option selected disabled>Fourchette de prix</option>
-                <option>-50 000 F CFA</option>
-                <option>50 000 - 100 000 F CFA</option>
-                <option>100 000 - 200 000 F CFA</option>
-                <option>+200 000 F CFA</option>
-            </select>
-            
-            <select>
-                <option selected disabled>Villes en Côte d'Ivoire</option>
-                <option>Abidjan</option>
-                <option>Bouake</option>
-                <option>Korpgho</option>
-                <option>San Pedro</option>
-            </select>
-            
-            <select>
-                <option selected disabled>Nombre de pièces</option>
-                <option>Studio</option>
-                <option>Villa basse</option>
-                <option>Chambre - Salon</option>
-                <option>Deux chambres - Salon</option>
-                <option>Duplex</option>
+        <section id="home">
+            <h2>Bienvenue sur RESICHAP 24/7</h2>
+            <p>Trouvez et réservez des résidences en toute simplicité, disponibles à tout moment !</p>
+            <div class="search-container">
+                <select>
+                    <option selected disabled>Fourchette de prix</option>
+                    <option>50 000 F CFA</option>
+                    <option>50 000 - 100 000 F CFA</option>
+                    <option>100 000 - 200 000 F CFA</option>
+                    <option>200 000 F CFA</option>
+                </select>
                 
-            </select>
-            
-            <button>Rechercher</button>
-        </div>
-    </section>
+                <select>
+                    <option selected disabled>Villes en Côte d'Ivoire</option>
+                    <option>Abidjan</option>
+                    <option>Bouake</option>
+                    <option>Korhogo</option>
+                    <option>San Pedro</option>
+                </select>
+                
+                <select>
+                    <option selected disabled>Nombre de pièces</option>
+                    <option>Studio</option>
+                    <option>Villa basse</option>
+                    <option>Chambre - Salon</option>
+                    <option>Deux chambres - Salon</option>
+                    <option>Duplex</option>
+                </select>
+                
+                <button>Rechercher</button>
+            </div>
+        </section>
         <!-- Section Résidences en vedette -->
         
-        <section id="featured">
+        <!-- <section id="featured">
             <h2>Résidences en vedette</h2>
             <div class="card-grid">
                 <div class="card">
@@ -122,14 +121,14 @@
                     <button>Réserver maintenant</button>
                 </div>  
             </div>
-        </section>
+        </section> -->
         
 <!-- Section Contact -->
 <section id="contact">
     <h2>Contactez-nous</h2>
     <p>Pour toute question ou demande, n'hésitez pas à nous joindre :</p>
     <div class="contact-info">
-        <p><strong>Email :</strong> <a href="mailto:topnumerica@gmail.com">topnumerica@gmail.com</a></p>
+        <p><strong>Email :</strong> <a href="mailto:topnumerica@gmail.com">hello.RESICHAP@OUTLOOK.fr</a></p>
         <p><strong>Téléphone :</strong> <a href="tel:+2250759184489">+225 0759184489</a></p>
     </div>
 </section>
